@@ -104,10 +104,31 @@
       </section>
 
       <section class="map">
-<!--здесь будет форма-->
+        <form class="search" action="get ">
+          <p class="search-data">
+            <label for="arrival-date">Дата заезда:</label>
+            <input type="text " id="arrival-date" name="arrival" placeholder="24 апреля 2017">
+          </p>
+          <p class="search-data">
+            <label for="departure-date">Дата выезда:</label>
+            <input type="text " id="departure-date" name="departure" placeholder="4 июля 2017">
+          </p>
+          <p class="search-data">
+            <label for="number-of-adults">Взрослые:</label>
+            <button class="button button-minus ">меньше</button>
+            <input type="text " id="number-of-adults" name="adults " placeholder="2 ">
+            <button class="button button-plus ">больше</button>
+          </p>
+          <p class="search-data">
+            <label for="number-of-children">Дети:</label>
+            <button class="button button-minus ">меньше</button>
+            <input type="text " id="number-of-children" name="children " placeholder="0 ">
+            <button class="button button-plus ">больше</button>
+          </p>
           <p>
             <button class="button button-search" type="submit">Найти</button>
           </p>
+        </form>
       </section>
     </main>
 

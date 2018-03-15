@@ -23,10 +23,56 @@
       <h1 class="visually-hidden">Подбор отелей</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр выбора отелей</h2>   
-<!--здесь будет форма-->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset filters-choice>
+            <legend class="filters-header">Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool-checkbox" checked>
+                <label for="pool-checkbox">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking-checkbox">
+                <label for="parking-checkbox">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="network" id="network-checkbox">
+                <label for="network-checkbox">WI-FI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset filters-choice>
+            <legend class="filters-header">Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel-checkbox" checked>
+                <label for="hotel-checkbox">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel-checkbox" checked>
+                <label for="motel-checkbox">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="apartment-checkbox" checked>
+                <label for="apartment-checkbox">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset filters-choice>
+            <legend class="filters-header">Стоимость в сутки (Р):</legend>
+            <ul>
+              <li class="filter-range">
+                <input type="text" name="min" placeholder="от 0" id="filter-min">
+              </li>
+              <li class="filter-range">
+                <input type="text" name="max" placeholder="до 3000" id="filter-max">
+              </li>
+            </ul>
+          </fieldset>
           <button type="submit" class="filter-button button">
           Показать
-          </button>        
+          </button>
+        </form>        
       </section>
         
       <section class="sorting">
