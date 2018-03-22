@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+   <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -15,24 +16,26 @@
         </a>
         <ul class="site-navigation">
           <li class="navigation-link"><a href="info.html">Информация</a></li>
-          <li><a href="photo-video.html">Фото и видео</a></li>
-          <li><a href="state-map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="navigation-link"><a href="photo-video.html">Фото и видео</a></li>
+          <li class="navigation-link"><a href="state-map.html">Карта штата</a></li>
+          <li class="navigation-link"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main class="contain">
       <h1 class="visually-hidden">Город Седона</h1>
 
       <section class="knowing"> 
         <h2 class="visually-hidden">Знакомство</h2>
-        <img src="img/sedona.png" width="458" height="352" alt="Седона фон"> 
-        <img src="img/mask.png" width="1200" height="57" alt="Маска">
+        <div class="knowing-wrap">
+        	<img src="img/sedona.png" width="458" height="352" alt="Седона фон"> 
+        	<img src="img/mask.png" width="1200" height="57" alt="Маска">
+        </div>
       </section>
 
       <section class="intro">
         <div class="intro_text">
-          <h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+          <h2>Седона - небольшой городок в аризоне,<br> заслуживающий большего!</h2>
         </div>
         <div class="intro_text">
           <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
@@ -58,25 +61,25 @@
               <h2>Жилье</h2>
               <p>Рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p>
             </li>
-            <li>
-              <h2 class="features-advice">Еда</h2>
+            <li class="features-advice">
+              <h2>Еда</h2>
               <p>Всегда заказывайте фирменный бургер, <br> вы не разочаруетесь!</p>
             </li>
-            <li>
-              <h2 class="features-advice">Сувениры</h2>
+            <li class="features-advice">
+              <h2>Сувениры</h2>
               <p>Не только китайского, но и местного <br> производства!</p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="factor">
-        <div class="factor-place">
+      <section class="factor-devil">
+        <div class="factor-place-devil">
           <h2>Там есть <br> мост дьявола</h2>
           <span>-№2-</span>
           <p>Да, по нему можно пройти! Если конечно <br> вы осмелитесь</p>
         </div>
-        <div class="factor-view">
+        <div class="factor-view-devil">
           <img src="img/devil-bridge.jpg" width="800" height="256" alt="Фото мост дьявола">
         </div>
       </section>
@@ -150,6 +153,6 @@
         <a href="# ">HTML academy</a>
       </p>
     </footer>
-      
+    </div>
   </body>
 </html>
