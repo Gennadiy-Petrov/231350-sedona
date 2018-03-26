@@ -15,9 +15,9 @@
           <img src="img/logo.png" width="138" height="70" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photo-video.html">Фото и видео</a></li>
-          <li><a href="state-map.html">Карта штата</a></li>
+          <li class="navigation-link"><a href="info.html">Информация</a></li>
+          <li class="navigation-link"><a href="photo-video.html">Фото и видео</a></li>
+          <li class="navigation-link"><a href="state-map.html">Карта штата</a></li>
           <li class="navigation-link current"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -102,14 +102,16 @@
           </div>
           <div class="found-declaration">
             <h2 class="found-declaration-header"><a href="#">Amara resort & spa</a></h2>
-            <div class="found-item">
+            <div class="found-wrapper">
+            	<div class="found-item">
               <span>Гостиница</span><br>
               <a href="#">Подробнее</a>
-            </div>
-            <div class="found-book">
+            	</div>
+            	<div class="found-book">
               <span>От 4000 р.</span><br>
               <a href="#">Забронировать</a>
-            </div>
+            	</div>
+           </div>
           </div>
           <div class="found-rate">
             <div class="found-stars">
@@ -130,14 +132,16 @@
           </div>
           <div class="found-declaration">
             <h2 class="found-declaration-header"><a href="#">Desert quail inn</a></h2>
-            <div class="found-item">
-              <span>Мотель</span><br>
-              <a href="#">Подробнее</a>
-            </div>
-            <div class="found-book">
-              <span>От 3000 р.</span><br>
-              <a href="#">Забронировать</a>
-            </div>
+            <div class="found-wrapper">
+            	<div class="found-item">
+              	<span>Мотель</span><br>
+             	 <a href="#">Подробнее</a>
+           	 </div>
+            	<div class="found-book">
+             	 <span>От 3000 р.</span><br>
+             	 <a href="#">Забронировать</a>
+           	 </div>
+						</div>
           </div>
           <div class="found-rate">
             <div class="found-stars">
@@ -157,14 +161,16 @@
           </div>
           <div class="found-declaration">
             <h2 class="found-declaration-header"><a href="#">Villas at poco diablo</a></h2>
-            <div class="found-item">
-              <span>Апартаменты</span><br>
-              <a href="#">Подробнее</a>
-            </div>
-            <div class="found-book">
-              <span>От 2000 р.</span><br>
-              <a href="#">Забронировать</a>
-            </div>
+            <div class="found-wrapper">
+            	<div class="found-item">
+              	<span>Апартаменты</span><br>
+              	<a href="#">Подробнее</a>
+            	</div>
+            	<div class="found-book">
+              	<span>От 2000 р.</span><br>
+              	<a href="#">Забронировать</a>
+            	</div>
+						</div>
           </div>
           <div class="found-rate">
             <div class="found-stars">
@@ -179,7 +185,7 @@
       </section>        
     </main>
       
-    <footer class="main-footer">
+    <footer class="main-footer main-footer-catalog-opacity ">
       <p class="footer">#VISITSEDONA</p>
       <div class="footer-social">
         <ul class="social-list">
@@ -188,7 +194,10 @@
           <li><a class="social-button " href="# ">youtube</a></li>
         </ul>
       </div>
-      <p class="footer-copyright "><b>WEBSITE BY </b><a href="# ">HTML academy</a></p>
+      <p class="footer-copyright ">
+        <b>WEBSITE BY </b>
+        <a href="# ">HTML academy</a>
+      </p>
     </footer>
       </div>
   </body>

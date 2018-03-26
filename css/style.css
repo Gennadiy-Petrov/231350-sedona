@@ -41,9 +41,6 @@ a {
 }
 
 .main-navigation {
-	display: flex;
-	flex-direction: column;
-	 align-items: center;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -58,6 +55,9 @@ outline: 1px solid blue;
   width: 138px;
   height: 70px;
   position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%,0);
 /*
   outline: 1px solid purple;
   background-color: rgba(0,0,255,0.2);
@@ -66,8 +66,10 @@ outline: 1px solid blue;
 
 .site-navigation {
 	display: flex;
-	justify-content: space-around;
-  width: 1200px;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -186,6 +188,7 @@ outline: 1px solid blue;
   text-align: center;
 /*	min-height: 256px;*/
   width: 400px;
+	padding-top: 30px;
 /*
   outline: 1px solid green;
   background-color: rgba(80,134,255,0.3);
@@ -197,6 +200,7 @@ outline: 1px solid blue;
   text-align: center;
 /*	min-height: 256px;*/
   width: 400px;
+	padding-top: 30px;
 /*
   outline: 1px solid green;
   background-color: rgba(80,134,255,0.3);
@@ -212,6 +216,21 @@ outline: 1px solid blue;
 }
 
 .factor-place p, span {	
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.factor-place-devil h2 {
+	
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.factor-place-devil p, span {	
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -244,12 +263,23 @@ outline: 1px solid blue;
 */
 }
 
+/*
+.features-advice h2,p{
+	display: block;
+	text-align: center;/
+} 
+*/
+
+
 .features-advice {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*	justify-content: center;*/
   height: 270px;
   width: 320px;
+	text-align: center;
+	padding-top: 56px;
+/*	padding-bottom: 84px;*/
 /*
   background-color: rgba(0,255,127,0.4);
   outline: 1px solid fuchsia;
@@ -286,13 +316,15 @@ outline: 1px solid blue;
 }
 
 .interest-block {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*	justify-content: space-around;*/
+/*	align-items: center;*/
+	display: block;
+	text-align: center;	
   background-color: #ffffff;
 /*  text-align: center;*/
-	min-height: 291px;
+/*	min-height: 291px;*/
 /*
   outline: 2px solid green;
   background-color: rgba(80,134,255,0.3);
@@ -310,33 +342,49 @@ outline: 1px solid blue;
 }
 
 .interest-block h2 {
+	display: block;
+	margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+	padding-top: 50px;
+	padding-bottom: 23px;
   color: #000000;
 }
 
 .interest-block p {
+	display: block;
+	margin: 0;
+	padding-bottom: 48px;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 400;	 
   color: #333333;
 }
 
-.interest a {
+.interest-block a {
+	display: block;
+	width: 568px;
+	margin-left: 316px; 
+/*	padding-left: 50%;*/
+	
+/*	padding-bottom: 80px;*/
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
   background-color: #766357;
-/*	height: 50px;*/
-	width: 30%;
+/*	width: 30%;*/
+/*	height: 86px;*/
+padding: 30px 0;
 }
 
 .map {
+/*
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+*/
   background-image: url(../img/map.jpg);
   background-position: 50% 50%;
   width: 1200px;
@@ -350,9 +398,15 @@ outline: 1px solid blue;
 }
 
 .search {
+	margin: 0 auto;
   background-color: #ffffff;
-	min-height: 395px;
-  width: 568px;
+/*	min-height: 395px;*/
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+  width: 458px;
+	padding: 55px;
 /*
   background-color: rgba(255,255,0,0.3);
   outline: 1px solid red;
@@ -360,13 +414,32 @@ outline: 1px solid blue;
 }
 
 .search-data {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 30px;
+	margin: 0;
+	width: 100%;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
 }
 
+.search-people {
+	justify-content: flex-start;
+	width: 50%;
+/*	padding-left: 20px;*/
+}
+
+/*
+.search-people input {
+	width: 85%;
+}
+*/
+
 .search-data input {
+	width: 345px;
+	min-height: 35px;
   font: inherit;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -421,6 +494,7 @@ outline: 1px solid blue;
 	display: flex;
 	justify-content: space-around;
   background-color: #ffffff;
+	
 /*  text-align: center;*/
 /*	margin-top: auto;*/
 /*  min-height: 120px;*/
@@ -429,6 +503,18 @@ outline: 1px solid blue;
   background-color: rgba(80,134,255,0.5);
   outline: 2px dotted green;
 */
+}
+
+.main-footer-opacity {
+	height: 120px;
+	background-color: rgba(255,255,255,0.9);
+	margin-top: -120px;
+}
+
+.main-footer-catalog-opacity {
+	height: 120px;
+	background-color: rgba(255,255,255,0.9);
+/*	margin-top: -120px;*/
 }
 
 .footer {
@@ -682,23 +768,55 @@ filters-wrapper {
 
 .found {
 	display: flex;
-	height: 150px;
+/*	height: 150px;*/
 	justify-content: space-between;
 	align-items: center;
-  border: 2px solid #f6f6f6;
+  border-top: 1px solid #e5e5e5;
+	padding: 30px 70px;
+}
+
+.found:nth-child(3) {
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .found-declaration {
+/*	display: flex;*/
+	width: 360px;
+/*	outline: 2px solid red;*/
+	margin-right: auto;
+}
+
+.found-declaration h2 {
+	margin: 0;
+}
+
+.found-wrapper {
 	display: flex;
-/*	flex-direction: column;*/
-/*	background-color: azure;*/
+	justify-content: flex-start;	
+}
+
+.found-image {
+	height: 90px;
+/*	outline: 2px solid pink;*/
+	margin-right: 30px;	
 }
 
 .found-item {
 /*	width: 365px;*/
 	display: flex;
-	flex-direction: column;
+	flex-direction: column;	
+/*	width: 40%;*/
+/*	outline: blue solid 2px;*/
+	margin-right: 6px;	
 }
+
+.found-book {
+	display: flex;
+	flex-direction: column;	
+/*	width: 40%;*/
+/*	outline: 2px solid black;*/
+}
+
 
 .found-declaration-header a {
   font-size: 21px;
@@ -716,19 +834,22 @@ filters-wrapper {
   color: rgba(0,0,0,0.3);
 }
 
-.found-book span {
+.found-book span {	
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+	
 }
 
 .found-book a {
+	padding: 5px 17px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
   background-color: #766357;
+	
 }
 
 .found-book a:hover,
@@ -742,6 +863,7 @@ filters-wrapper {
 }
 
 .found-item a {
+	padding: 5px 17px;	
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
