@@ -12,7 +12,7 @@ body {
 }
 
 .inner-page {
-  background-color: #fefefe;
+  background-color: #f2f2f2;
 }
 
 .container {
@@ -937,6 +937,7 @@ padding: 30px 0;
   background-repeat: no-repeat;
 /*  background-position: 50% 50%;*/
   background-color: #7d9dbe;
+	padding-bottom: 7px;
 /*  text-align: left;*/
 /*	background-color: rgba(127,255,212,0.2);*/
 /*  outline: 1px solid blue;*/
@@ -944,7 +945,7 @@ padding: 30px 0;
 
 .filter {
 	display: flex;
-	height: 217px;	
+/*	height: 217px;	*/
 	justify-content: space-between;
 /*	outline: 2 px solid brown;*/
 /*
@@ -975,7 +976,7 @@ padding: 30px 0;
 }
 
 .filters fieldset:nth-child(2){
-	margin-left: 107px;
+	margin-left: 106px;
 	margin-right: auto;
 }
 
@@ -1124,18 +1125,18 @@ filter-option-house label{
 }
 /*888888888888888888888888888888888*/
 .filter-range {
-  width: 330px;
+  width: 317px;
 /*  margin: 50px auto;  для демо */
 
   color: #ffffff;
   text-transform: uppercase;
 /*	outline: 2px solid red;*/
 	margin-top: 27px;
-  margin-right: 58px;
+  margin-right: 72px;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   font-weight: 600;
   font-size: 16px;
@@ -1144,8 +1145,8 @@ filter-option-house label{
 
 .price-controls {
   position: relative;
-  
-  height: 36px;
+  width: 314px;
+  height: 32px;
   margin-bottom: 20px;
 
   font-size: 0;
@@ -1172,16 +1173,21 @@ filter-option-house label{
 	
   font-size: 14px;
   line-height: 21px;
+	padding-top: 5px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
-.price-controls .min-price,
+.price-controls .min-price {
+  width: 82px;
+  padding-left: 64px;
+}
+
 .price-controls .max-price {
   width: 90px;
   padding-left: 65px;
 }
+
 
 .price-controls input {
   width: 50px;
@@ -1196,7 +1202,7 @@ filter-option-house label{
 
 .range-controls {
   position: relative;
-
+	width: 316;
   margin-bottom: 32px;
 }
 
@@ -1243,7 +1249,8 @@ filter-option-house label{
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 30px;
+	margin-left: 84px;
+  padding: 6px 27px 6px 34px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1263,11 +1270,12 @@ filter-option-house label{
 }
 /*999999999999999999999999999999999*/
 .sorting {
-	height: 86px;
+	
 	display: flex;
 	position: relative;
 /*	justify-content: space-between;*/
 	align-items: center;
+	padding-top: 2px;
 /*	background-color: rgba(240, 128, 128, 0.3);*/
 }
 
@@ -1371,11 +1379,11 @@ filter-option-house label{
 /*77777777777777777777777777777777777777*/
 .found {
 	display: flex;
-	height: 90px;
+/*	height: 90px;*/
 	justify-content: space-between;
-	align-items: center;
+/*	align-items: center;*/
   border-top: 1px solid #e5e5e5;
-	padding: 30px 70px;
+	padding: 25px 70px 29px 70px;
 }
 
 .found:nth-child(3) {
@@ -1390,7 +1398,8 @@ filter-option-house label{
 }
 
 .found-declaration h2 {
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 6px;
 }
 
 .found-wrapper {
@@ -1402,6 +1411,8 @@ filter-option-house label{
 	height: 90px;
 /*	outline: 2px solid pink;*/
 	margin-right: 30px;	
+	margin-top: 6px;
+  margin-left: 2px;	
 }
 
 .found-item {
@@ -1442,11 +1453,11 @@ filter-option-house label{
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-	
+	margin-bottom: 15px;
 }
 
 .found-book a {
-	padding: 5px 17px;
+	padding: 3px 17px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -1466,7 +1477,7 @@ filter-option-house label{
 }
 
 .found-item a {
-	padding: 5px 17px;	
+	padding: 3px 17px;	
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -1489,18 +1500,21 @@ filter-option-house label{
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+	margin-bottom: 15px;
 }
 
-.found-valuation span {
+.found-valuation  span {
   color: #666666;
   background-color: #f2f2f2;
-	padding: 5px 13px;
+	padding: 5px 14px;
 }
 
 .found-stars {
 	display: flex;
 	justify-content: flex-end;	
-	width: 110px;
+	width: 111px;
+	align-items: flex-start;
+  padding-top: 1px;
 }
 
 .icon-star {
