@@ -67,28 +67,32 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
 	display: flex;
-	justify-content: left;
-	text-align: center;
-	align-items: center;
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	list-style: none;
-	min-height: 56px;
-}
-
-.site-navigation li:first-child {
-	margin-left: 72px;
-	margin-right: 147px;
-}
-
-.site-navigation li:nth-child(3) {
-	margin-left: 388px;
-	margin-right: 166px;
+	padding-top: 14px;
+	padding-bottom: 16px;
+	list-style: none;	
 }
 
 .navigation-link {
-	box-sizing: border-box;
+	box-sizing: border-box;	
+	flex-basis: 241px;
+	text-align: left;
+}
+
+.navigation-link:nth-child(3),
+.navigation-link:nth-child(4) {
+	text-align: right;
+}
+
+.navigation-link:nth-child(1) {
+	margin-left: 72px;
+}
+
+.navigation-link:nth-child(3) {
+	margin-left: 88px;
+	margin-right: 4px;
 }
 
 .site-navigation a {
@@ -443,8 +447,8 @@ input[type="radio"].visually-hidden {
 	font: inherit;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
-	border: 1px solid transparent;
-	padding: 5px;
+	border: 2px solid transparent;
+	padding: 4px;
 	padding-left: 10px;
 }
 
@@ -456,10 +460,10 @@ input[type="radio"].visually-hidden {
 	padding-left: 38px;
 	padding-right: 38px;
 	text-align: center;
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 	font: inherit;
 	background-color: #f2f2f2;
-	padding: 5px;
+	padding: 4px;
 }
 
 .children input {
@@ -577,7 +581,7 @@ input[type="radio"].visually-hidden {
 
 .map input:focus {
 	background-color: transparent;
-	border: 1px solid #f2f2f2;
+	border: 2px solid #f2f2f2;
 	outline: none;
 }
 
