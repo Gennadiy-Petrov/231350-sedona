@@ -67,8 +67,8 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
 	display: flex;
-	width: 100%;
-	margin: 0;
+	width: 1056px;
+	margin: 0 auto;
 	padding: 0;
 	padding-top: 14px;
 	padding-bottom: 16px;
@@ -77,7 +77,7 @@ input[type="radio"].visually-hidden {
 
 .navigation-link {
 	box-sizing: border-box;	
-	flex-basis: 241px;
+	flex-basis: 240px;
 	text-align: left;
 }
 
@@ -86,13 +86,8 @@ input[type="radio"].visually-hidden {
 	text-align: right;
 }
 
-.navigation-link:nth-child(1) {
-	margin-left: 72px;
-}
-
 .navigation-link:nth-child(3) {
-	margin-left: 88px;
-	margin-right: 4px;
+	margin-left: auto;	
 }
 
 .site-navigation a {
