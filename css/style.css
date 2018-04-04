@@ -50,6 +50,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation {
+	position: relative;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
