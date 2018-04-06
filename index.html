@@ -107,7 +107,7 @@
                 <div class="interest-block">
                     <h2>Заинтересовались?</h2>
                     <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                    <a href="catalog.html"> Поиск гостиницы в Седоне</a>
+                    <a class="link-form" href="catalog.html"> Поиск гостиницы в Седоне</a>
                 </div>
             </section>
 
@@ -187,5 +187,46 @@
             </p>
         </footer>
     </div>
+	<script>
+		var link = document.querySelector(".link-form");
+		var form = document.querySelector(".search");
+		var arrival = form.querySelector("[name=arrival]");
+		var departure = form.querySelector("[name=departure]");
+		var adults = form.querySelector("[name=adults]");
+		var children = form.querySelector("[name=children]");
+		
+		link.addEventListener("click", function (evt) {
+			evt.preventDefault();
+			if (form.classList.contains("modal-error")) {
+				form.classList.remove("modal-error");			
+			}
+			form.classList.toggle("search-show");
+			arrival.focus();
+		});
+		
+		form.addEventListener("submit", function (evt) {
+			if (!arrival.value || !departure.value || !adults.value || !children.value) {
+			evt.preventDefault();
+				form.classList.remove("modal-error");
+				form.offsetWidth = form.offsetWidth;
+				form.classList.add("modal-error");
+			console.log("Нужно ввести date");
+			} else {
+				console.log("date add");
+				localStorage.setItem("arrival", arrival.value);
+			}
+		});
+		
+		window.addEventListener("keydown", function (evt) {
+			if (evt.keyCode === 27) {
+				evt.preventDefault();
+				if (form.classList.contains("search-show")) {
+					form.classList.remove("search-show");
+					form.classList.remove("modal-error");
+				}
+			}
+		})
+		
+	</script>
 </body>
 </html>
