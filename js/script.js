@@ -7,6 +7,8 @@
     var isStorageSupport = true;
     var strorage = "";
 
+	form.classList.add("search-hide");
+
     try {
         storage = localStorage.getItem("arrival");
     } catch (err) {
@@ -49,4 +51,3 @@
             }
         }
     })
-

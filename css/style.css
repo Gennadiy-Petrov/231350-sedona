@@ -380,23 +380,27 @@ input[type="radio"].visually-hidden {
 }
 
 .search {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 316px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 458px;
-    padding: 55px;
-    padding-bottom: 24px;
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 316px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 458px;
+	padding: 55px;
+	padding-bottom: 24px;
+}
+
+.search-hide {
+	display: none;
 }
 
 .search-show {
-    display: flex;
-    animation: bounce 1.5s;
+   	display: flex;
+	animation: bounce 1.5s;
 }
 
 .modal-error {
@@ -426,7 +430,6 @@ input[type="radio"].visually-hidden {
     100% {
         transform: translateX(0);
     }
-
     10%,
     30%,
     50%,
@@ -434,7 +437,6 @@ input[type="radio"].visually-hidden {
     90% {
         transform: translateX(-5px);
     }
-
     20%,
     40%,
     60%,
